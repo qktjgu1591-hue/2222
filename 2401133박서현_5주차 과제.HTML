@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>4주차 과제 - 문제/답 분리</title>
+    <style>
+        body { font-family: sans-serif; }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 좌우 분할 */
+            gap: 20px;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 16px;
+            border-radius: 8px;
+        }
+        h2 { margin-top: 0; }
+        @media (max-width: 700px) {
+            .container { grid-template-columns: 1fr; } /* 모바일은 위아래 */
+        }
+    </style>
+</head>
+<body>
+    <h1>div tag 이용해서 문제와 답 분리하기</h1>
+
+    <div class="container">
+        <!-- 문제 영역 -->
+        <div class="box" id="question">
+            <h2>문제</h2>
+            <ol>
+                <li>인터넷이란?</li>
+                <li>하이퍼링크란?</li>
+                <li>W3C란?</li>
+                <li>웹 브라우저란?</li>
+                <li>플러그인이란?</li>
+                <li>웹 2.0이란?</li>
+                <li>WHATWG란?</li>
+                <li>HTML5란?</li>
+                <li>웹에서 요청하는 쪽은?</li>
+                <li>응답하는 쪽은?</li>
+                <li>URL이란?</li>
+                <li>서버 프로그램은 어디에 있고 무엇이라 부르는가?</li>
+                <li>클라이언트 프로그램은 어디에 있고 무엇이라 부르는가?</li>
+                <li>마크업이란?</li>
+                <li>CSS란?</li>
+                <li>자바스크립트란?</li>
+                <li>ECMAScript란?</li>
+                <li>일렉트론이란?</li>
+                <li>리액트 네이티브 엔진이란?</li>
+                <li>크로스 플랫폼 개발이란?</li>
+            </ol>
+        </div>
+
+        <!-- 답안 영역 -->
+        <div class="box" id="answer">
+            <h2>답</h2>
+            <ol>
+                <li>전 세계를 연결하는 국제 정보 통신망 (컴퓨터·스마트폰으로 정보 공유 가능)</li>
+                <li>인터넷에서 문서 사이를 쉽게 이동할 수 있는 기능</li>
+                <li>HTML 표준을 비롯한 웹 표준안을 제작·제안하는 국제 웹 표준화 단체</li>
+                <li>웹에 공개된 정보를 탐색할 수 있는 프로그램</li>
+                <li>사용자 PC에 프로그램을 추가 설치해 웹 브라우저 기능을 확장하는 방법</li>
+                <li>서로 다른 사용자가 함께 새로운 콘텐츠를 창조할 수 있는 시대</li>
+                <li>Web Application 1.0 표준을 작성한 단체 (현재 HTML W/G로 개명)</li>
+                <li>Web Application 1.0 표준이 채택된 후 새 이름으로 바뀐 웹 표준</li>
+                <li>클라이언트</li>
+                <li>제공자</li>
+                <li>웹에서 어떤 대상을 구분하는 주소</li>
+                <li>사용자와 먼 곳에 있는 백엔드 프로그램</li>
+                <li>사용자와 가까운 곳에 있는 프런트엔드 프로그램</li>
+                <li>웹 페이지의 서식·구조를 표현하는 정보</li>
+                <li>HTML 페이지에서 스타일을 지정하는 언어</li>
+                <li>HTML 페이지에서 사용자 반응 등을 처리하는 스크립트 언어</li>
+                <li>자바스크립트의 공식 명칭</li>
+                <li>HTML5 기반의 데스크톱 애플리케이션 개발 엔진</li>
+                <li>페이스북이 만든 모바일 애플리케이션 개발 엔진</li>
+                <li>한 번 개발해서 여러 장치/플랫폼에 대응하는 것</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

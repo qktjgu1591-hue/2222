@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>중간고사 과제</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    header, footer { background: #f0f0f0; padding: 10px; }
+    nav a { margin-right: 10px; }
+    section { margin-top: 50px; }
+    table { border-collapse: collapse; margin-top: 10px; }
+    table, th, td { border: 1px solid black; padding: 5px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#section1">Section 1</a>
+      <a href="#section2">Section 2</a>
+      <a href="#section3">Section 3</a>
+      <a href="#section4">Section 4</a>
+    </nav>
+  </header>
+
+  <section id="section1">
+    <h2>Section 1 - 과제 목록</h2>
+    <ul>
+      <li><a href="assignment1.html" target="_blank">과제 1 보고서</a></li>
+      <li><a href="2401133박서현_4주차 과제.html" target="_blank">4주차 과제</a></li>
+      <li><a href="2401133박서현_5주차 과제.HTML" target="_blank">5주차 과제</a></li>
+    </ul>
+  </section>
+
+  <section id="section2">
+    <h2>Section 2 - 이력서</h2>
+    <table>
+      <tr><th>이름</th><td>박서현</td></tr>
+      <tr><th>나이</th><td>23</td></tr>
+    </table>
+    <table>
+      <tr><th>학력</th><td>한양여자대학교 시각미디어디자인과</td></tr>
+      <tr><th>경력</th><td>코리아테크 재직 1년 4개월</td></tr>
+    </table>
+  </section>
+
+  <section id="section3">
+    <h2>Section 3 - 이력서 ver2</h2>
+    <table>
+      <tr><th colspan="2">박서현의 이력</th></tr>
+      <tr><td>이메일</td><td>qktjgu1591@gmail.com</td></tr>
+      <tr><td>전공</td><td>시각미디어디자인과</td></tr>
+    </table>
+  </section>
+
+  <section id="section4">
+    <h2>Section 4 - 방명록</h2>
+    <form>
+      이름: <input type="text" name="name"><br>
+      나이: <input type="number" name="age"><br>
+      성별: 
+      <input type="radio" name="gender" value="male"> 남 
+      <input type="radio" name="gender" value="female"> 여<br>
+      생년: <input type="number" name="birthyear"><br>
+      생일: 
+      <select name="month">
+        <option>1월</option><option>2월</option><option>3월</option><option>4월</option>
+        <option>5월</option><option>6월</option><option>7월</option><option>8월</option>
+        <option>9월</option><option>10월</option><option>11월</option><option>12월</option>
+      </select>
+      <select name="day">
+        <option>1일</option><option>2일</option><option>3일</option><option>4일</option>
+        <option>5일</option><option>6일</option><option>7일</option><option>8일</option>
+        <option>9일</option><option>10일</option><option>11일</option><option>12일</option>
+        <option>13일</option><option>14일</option><option>15일</option><option>16일</option>
+        <option>17일</option><option>18일</option><option>19일</option><option>20일</option>
+        <option>21일</option><option>22일</option><option>23일</option><option>24일</option>
+        <option>25일</option><option>26일</option><option>27일</option><option>28일</option>
+        <option>29일</option><option>30일</option><option>31일</option>
+      </select><br>
+      이메일: <input type="email" name="email"><br>
+      비밀번호: <input type="password" name="pw"><br>
+      좋아하는 점심:
+      <select name="lunch">
+        <option>김치찌개</option><option>제육볶음</option>
+      </select><br>
+      <input type="submit" value="제출">
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 내 홈페이지</p>
+  </footer>
+
+</body>
+</html>
